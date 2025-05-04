@@ -1,0 +1,25 @@
+@import url(fonts.css);
+@import url(animations.css);
+
+:root {
+    /* Font */
+    --font-dm-sans: "DM Sans", sans-serif;
+
+    /* Colors */
+    --color-blue: #1c4aa6;
+    --color-white: #ffffff;
+    --color-dark-blue: #0d3760;
+    --color-dark: #0d0d0d;
+    --color-blue-pool: #0092f4;
+
+    /* Border Radius */
+    --border-radius: 12px;
+}
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-dm-sans);
+}
