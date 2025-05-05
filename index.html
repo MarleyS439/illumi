@@ -42,7 +42,9 @@
                     <a class="link" href="">Sobre nós</a>
                     <a class="link" href="">Soluções</a>
                     <a class="link" href="">Blog</a>
-                    <a class="link" href="">Trabalhe conosco</a>
+                    <a class="link" href="#work-with-illumi"
+                        >Trabalhe conosco</a
+                    >
                     <span class="link" id="language">
                         Português &#8964;
                         <img
@@ -52,7 +54,7 @@
                         />
                     </span>
 
-                    <div class="languageMenu" id="languageMenu">
+                    <!-- <div class="languageMenu" id="languageMenu">
                         <a class="link" href="" id="language">
                             English
                             <img
@@ -70,10 +72,10 @@
                                 alt="Espanõl"
                             />
                         </a>
-                    </div>
+                    </div> -->
 
                     <div class="action">
-                        <a href="">Contato</a>
+                        <a href="#contact">Contato</a>
                     </div>
                 </div>
             </nav>
@@ -102,10 +104,68 @@
             </div>
         </div>
 
+        <div id="contact"></div>
+
         <main>
+            <section class="work-we" id="work-with-illumi">
+                <div class="image-work-we">
+                    <img src="public/assets/images/work.avif" alt="Sobre nós" />
+                </div>
+                <div class="content-work-we">
+                    <h3>Siga a carreira de tecnologia com a Illumi.</h3>
+                    <p>
+                        A Illumi oferece diversas oportunidades para
+                        profissionais da área de tecnologia da informação que
+                        desejam fazer parte de uma equipe dinâmica e inovadora.
+                        Se você é apaixonado por tecnologia e busca
+                        constantemente por desafios, aqui é o seu lugar!
+                    </p>
+
+                    <a class="" href="">Saiba mais</a>
+                </div>
+            </section>
+
+            <section class="why-us">
+                <div class="why-us-container">
+                    <h3>Por que a Illumi?</h3>
+
+                    <p class="info">
+                        Somos uma empresa com excelência comprovada por métricas
+                        de desempenho, certificações internacionais e cases de
+                        sucesso reconhecidos no setor.
+                    </p>
+
+                    <div class="about-why-us">
+                        <a href="">Explore nossas vagas →</a>
+                        <a href="">Nova geração de especialistas →</a>
+                        <a href="">Nossos valores →</a>
+                        <a href="">Conheça nossa liderança →</a>
+                    </div>
+
+                    <div class="data">
+                        <div class="data-item">
+                            <span>12</span>
+                            <p>Escritórios globais</p>
+                        </div>
+                        <div class="data-item">
+                            <span>300+</span>
+                            <p>Especialistas dedicados</p>
+                        </div>
+                        <div class="data-item">
+                            <span>Top 1%</span>
+                            <p>Satisfação de cliente (Forrester 2023)</p>
+                        </div>
+                        <div class="data-item">
+                            <span>40h</span>
+                            <p>Semanais de inovação</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="contact-form">
                 <form>
-                    <div>
+                    <div class="title-form">
                         <h3>Que saber mais sobre nossos serviços?</h3>
                     </div>
 
@@ -153,6 +213,20 @@
                             name="phone"
                             id="phone"
                             placeholder="(00) 99999-9999"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-item inverted">
+                        <label for="consent"
+                            >Ao clicar no botão enviar, concordo com os
+                            <a href="">Termos de Uso</a></label
+                        >
+                        <input
+                            class=""
+                            type="checkbox"
+                            name="consent"
+                            id="consent"
                             required
                         />
                     </div>

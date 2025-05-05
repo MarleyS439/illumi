@@ -178,6 +178,47 @@
     }
 
     main {
+        margin: 2% 0%;
+    }
+
+    main .work-we {
+        padding: 5% 0%;
+        display: flex;
+        align-items: center;
+    }
+
+    main .work-we .image-work-we {
+        width: 50vw;
+        padding: 5%;
+    }
+
+    main .work-we .content-work-we {
+        width: 50vw;
+        padding: 5%;
+    }
+
+    main .work-we .content-work-we h3 {
+        padding: 2% 0%;
+        font-weight: bold;
+        font-size: 48px;
+        color: var(--color-dark);
+    }
+
+    main .work-we .content-work-we p {
+        margin-bottom: 5%;
+    }
+
+    main .work-we .content-work-we a {
+        padding: 10px 40px;
+        background-color: var(--color-dark-blue);
+        border-radius: var(--border-radius);
+        color: var(--color-white);
+        text-decoration: none;
+    }
+
+    main .work-we .image-work-we img {
+        width: 100%;
+        border-radius: var(--border-radius);
     }
 
     main .contact-form {
@@ -185,6 +226,81 @@
         background-repeat: no-repeat;
         height: 100vh;
         padding: 5%;
+    }
+
+    main .why-us {
+        height: 100vh;
+        padding: 5% 0%;
+        display: flex;
+        align-items: center;
+        background-image: url("../images/why.avif");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    main .why-us .why-us-container {
+        padding: 5%;
+    }
+
+    main .why-us .why-us-container h3 {
+        font-size: 48px;
+        margin: 1% 0%;
+        color: var(--color-white);
+    }
+
+    main .why-us .about-why-us {
+        display: flex;
+        gap: 35px;
+        margin: 3% 0%;
+    }
+
+    main .why-us .about-why-us a {
+        color: var(--color-white);
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 300ms;
+    }
+
+    main .why-us .about-why-us a:hover {
+        text-decoration: underline;
+        transform: translate(5px, 0px);
+    }
+
+    main .why-us .why-us-container .info {
+        margin: 2% 0%;
+        width: 60vw;
+        color: var(--color-white);
+        font-size: 1.2rem;
+    }
+
+    main .why-us .data {
+        display: flex;
+        width: 100%;
+        color: var(--color-white);
+    }
+
+    main .why-us .data .data-item {
+        margin-top: 4%;
+        display: flex;
+        min-width: 16vw;
+        flex-direction: column;
+        margin: 0% 2% 0% 0%;
+    }
+
+    main .why-us .data .data-item span {
+        font-size: 3rem;
+    }
+
+    main .why-us .data .data-item p {
+        font-size: 1rem;
+    }
+
+    main #contact {
+        margin: 2% 0%;
     }
 
     main .contact-form form {
@@ -196,7 +312,7 @@
         flex-direction: column;
         justify-content: center;
         border-radius: var(--border-radius);
-        border: 1px solid purple;
+        border: 1px solid rgba(50, 50, 93, 0.25);
     }
 
     main .contact-form form .form-item {
@@ -215,6 +331,28 @@
         border: 1px solid rgba(0, 0, 0, 0.4);
         border-radius: var(--border-radius);
         font-size: 16px;
+        outline: 1px;
+        transition: 500ms;
+    }
+
+    main .contact-form form .inverted {
+        display: flex;
+        justify-content: start;
+        flex-direction: row-reverse;
+    }
+
+    main .contact-form form .inverted a {
+        text-decoration: none;
+        color: var(--color-blue-pool);
+    }
+
+    main .contact-form form .inverted input {
+        margin-right: 5px;
+        width: 18px;
+    }
+
+    main .contact-form form .form-item input:focus {
+        outline: 1px solid var(--color-blue-pool);
     }
 
     main .contact-form form .form-item button {
@@ -230,6 +368,11 @@
 
     main .contact-form form .form-item button:hover {
         opacity: 0.8;
+    }
+
+    main .contact-form form .title-form h3 {
+        color: var(--color-dark-blue);
+        font-size: 24px;
     }
 
     footer {
