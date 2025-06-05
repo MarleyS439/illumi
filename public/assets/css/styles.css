@@ -3,10 +3,199 @@
 
 /* For screens <= 480px  */
 @media screen and (max-width: 480px) {
+    body {
+        background-color: var(--color-white);
+    }
+
+    nav {
+        display: none;
+    }
 }
 
 /* For screens >= 768px and <= 1024px */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: var(--color-white);
+    }
+
+    header {
+        position: relative;
+        background-image: url("../images/form-background.avif");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .header-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 50%;
+        left: 0%;
+        height: fit-content;
+        margin-left: 5%;
+        width: 70vw;
+        border-radius: var(--border-radius);
+        padding: 3%;
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(4px);
+    }
+
+    header .header-content h2 {
+        color: var(--color-dark);
+        margin-top: 2%;
+        font-weight: normal;
+    }
+
+    header .header-content h1 {
+        text-transform: uppercase;
+        font-size: 38px;
+        color: var(--color-blue);
+        font-weight: bold;
+    }
+
+    header .header-content .cta {
+        margin-top: 25px;
+    }
+
+    header .header-content .cta a {
+        padding: 10px 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-dark-blue);
+        color: white;
+        width: fit-content;
+        border-radius: var(--border-radius);
+        text-decoration: none;
+        transition: 300ms;
+    }
+
+    header .header-content .cta a:hover {
+        opacity: 0.9;
+    }
+
+    nav {
+        transition: 800ms;
+        position: fixed;
+        width: 100%;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 5%;
+        z-index: 10;
+        backdrop-filter: blur(4px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav .logo {
+        display: flex;
+        align-items: center;
+        transition: 1s;
+    }
+
+    nav.scrolled {
+        width: 95%;
+        border-radius: var(--border-radius);
+        top: 10px;
+        left: 2%;
+        padding: 4px 3%;
+        background-color: rgba(255, 255, 255, 0.9);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        box-shadow:
+            rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+            rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        animation: navbar-animation 0.5s ease 0s 1 normal forwards;
+    }
+
+    nav .logo img {
+        width: 70px;
+        pointer-events: none;
+        transition: 1s ease-out;
+    }
+
+    nav .links {
+        display: flex;
+        align-items: center;
+    }
+
+    nav .links a {
+        margin: 0px 10px;
+        color: var(--color-white);
+        text-decoration: none;
+        transition: 250ms;
+    }
+
+    nav .links .flag {
+        pointer-events: none;
+        width: 20px;
+        margin-right: 2px;
+    }
+
+    nav .languageMenu {
+        border: 1px solid red;
+        position: absolute;
+        top: 60px;
+        display: none;
+        flex-direction: column;
+        vertical-align: text-top;
+        right: 15%;
+        padding: 1%;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    nav .languageMenu a {
+        margin: 2px;
+        border: 1px solid gren;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    nav .links a.scrolled {
+        color: var(--color-dark);
+    }
+
+    nav .links a.unscrolled {
+        color: var(--color-dark);
+    }
+
+    nav .links span {
+        color: var(--color-white);
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    nav .links span.scrolled {
+        color: var(--color-dark);
+    }
+
+    nav .links a:nth-child(6) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .links .action a {
+        padding: 10px 30px;
+        background-color: var(--color-blue);
+        color: var(--color-white);
+        text-decoration: none;
+        border-radius: var(--border-radius);
+        transition: 300ms;
+    }
+
+    .links .action a:hover {
+        opacity: 0.9;
+    }
+
+    #language {
+        margin: 0px 10px;
+    }
 }
 
 /* For screens >= 1024px and <= 1366px */
@@ -188,6 +377,10 @@
         opacity: 0.9;
     }
 
+    #language {
+        margin: 0px 10px;
+    }
+
     main {
         margin: 2% 0%;
     }
@@ -236,7 +429,7 @@
     }
 
     main .work-we {
-        padding: 5% 0%;
+        padding-top: 2%;
         display: flex;
         align-items: center;
     }
